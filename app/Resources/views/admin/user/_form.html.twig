@@ -1,0 +1,10 @@
+{{ form_start(userForm) }}
+                {{ form_row(userForm.name) }}
+                {{ form_row(userForm.biography) }}
+                {{ form_row(userForm.profileimage, {
+                    'label': 'Profile Picture:'
+                }) }}
+                {#{{ form_row(userForm.hobbies) }}#}
+
+<button type="submit" class="btn btn-primary" formnovalidate>Save</button>
+{{ form_end(userForm) }}

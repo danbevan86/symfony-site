@@ -1,0 +1,11 @@
+AppBundle\Entity\User:
+    user_{1..10}:
+        name: <name()>
+        biography: <text(20)>
+        profileimage: <text(20)>
+
+AppBundle\Entity\Hobby:
+    user.hobby_{1..100}:
+        hobby: <text(20)>
+        age: <numberBetween(1, 100)>
+        user: '@user_*'
